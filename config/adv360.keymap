@@ -17,48 +17,48 @@
 
     default_layer {
       bindings = <
-        &kp EQUAL       &kp N1    &kp N2   &kp N3   &kp N4   &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB         &rpi ESCAPE Q     &rpi_lyr CODE W    &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R     &kp T                  &none                                                                    &none &kp Y  &kp U  &kp I              &kp O           &kp P            &kp BSLH
-        &kp ESC         &rpi LSHIFT A     &rpi LCTRL S       &rpi LALT D        &rpi LSHIFT F              &rpi LCMD G            &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                   &none &rpi RCMD H   &rpi RSHIFT J      &rpi RALT K     &rpi RCTRL L    &rpi RSHIFT SEMI &kp SQT
-        &kp LSHFT       &kp Z     &kp X   &kp C    &kp V     &rpi CAPSLOCK B                               &kp HOME &kp PG_UP                                                                              &kp N &kp M         &kp COMMA &kp DOT  &kp FSLH        &kp RSHFT
-        &tog DOTA_BASE  &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
+        &kp EQUAL       &kp N1            &kp N2             &kp N3             &kp N4                     &kp N5                 &tog 1                                                                               &mo 3 &kp N6 &kp N7 &kp N8             &kp N9          &kp N0          &kp MINUS
+        &kp TAB         &rpi ESCAPE Q     &rpi_lyr CODE W    &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R     &kp T                  &none                                                                                &none &kp Y  &kp U  &kp I              &kp O           &kp P           &kp BSLH
+        &kp ESC         &rpi LSHIFT A     &rpi LCTRL S       &rpi LALT D        &rpi LSHIFT F              &rpi LCMD G            &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                               &none &rpi RCMD H   &rpi RSHIFT J      &rpi RALT K     &rpi RCTRL L    &rpi RSHIFT SEMI &kp SQT
+        &kp LSHFT       &kp Z             &kp X              &kp C              &kp V                      &rpi CAPSLOCK B                               &kp HOME &kp PG_UP                                                  &kp N &kp M   &kp COMMA          &kp DOT         &kp FSLH        &kp RSHFT
+        &tog DOTA_BASE  &kp GRAVE         &kp CAPS           &kp LEFT           &kp RIGHT                                                        &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE                         &kp UP  &kp DOWN           &kp LBKT        &kp RBKT        &trans
       >;
     };
     code_layer  {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
-        &kp TAB   &rpi_slow F1 N1   &rpi_slow F2 N2   &rpi_slow F3 N3    &rpi_slow F4 N4                   &rpi_slow F5 N5  &none                                                                                &none &rpi_fast PLUS EQUAL   &rpi_fast UNDER MINUS     &rpi_fast LT LPAR      &rpi_fast GT RPAR        &kp AMPS    &kp BSLH
-        &kp ESC   &rpi_slow F6 N6   &rpi_slow F7 N7   &rpi_slow F8 N8    &rpi_slow F9 N9                   &rpi_slow F10 N0  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                              &none &rpi_fast QMARK AT     &rpi_fast SQT DQT         &rpi_fast LBKT LBRC    &rpi_fast RBKT RBRC      &rpi_fast PIPE EXCL     &kp SQT
-        &kp LSHFT &kp F11           &kp F12           &trans             &rpi_fast C_BRI_DN C_VOLUME_DOWN  &rpi_fast C_BRI_UP C_VOLUME_U                            &kp HOME &kp PG_UP                           &rpi_fast SLASH HASH   &rpi_fast BSLH DOLLAR     &rpi_fast PIPE PRCNT   &rpi_fast TILDE GRAVE    &rpi_fast CARET ASTRK    &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
+        &kp EQUAL         &kp N1            &kp N2            &kp N3             &kp N4                            &kp N5                          &trans                                                                               &mo 3 &kp N6                 &kp KP_NUM                &kp KP_EQUAL           &kp KP_DIVIDE            &kp KP_MULTIPLY         &kp MINUS
+        &kp TAB           &rpi_slow F1 N1   &rpi_slow F2 N2   &rpi_slow F3 N3    &rpi_slow F4 N4                   &rpi_slow F5 N5                 &none                                                                                &none &rpi_fast PLUS EQUAL   &rpi_fast UNDER MINUS     &rpi_fast LT LPAR      &rpi_fast GT RPAR        &kp AMPS                &kp BSLH
+        &kp ESC           &rpi_slow F6 N6   &rpi_slow F7 N7   &rpi_slow F8 N8    &rpi_slow F9 N9                   &rpi_slow F10 N0                &none                   &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                       &none &rpi_fast QMARK AT     &rpi_fast SQT DQT         &rpi_fast LBKT LBRC    &rpi_fast RBKT RBRC      &rpi_fast PIPE EXCL     &kp SQT
+        &kp LSHFT         &kp F11           &kp F12           &trans             &rpi_fast C_BRI_DN C_VOLUME_DOWN  &rpi_fast C_BRI_UP C_VOLUME_U                               &kp HOME &kp PG_UP                                             &rpi_fast SLASH HASH   &rpi_fast BSLH DOLLAR     &rpi_fast PIPE PRCNT   &rpi_fast TILDE GRAVE    &rpi_fast CARET ASTRK   &kp RSHFT
+        &tog DOTA_BASE    &kp GRAVE         &kp CAPS          &kp LEFT           &kp RIGHT                         &kp BSPC &kp DEL                                        &kp END  &kp PG_DN &kp ENTER &kp KP_N0                                                    &kp UP                    &kp DOWN               &kp KP_DOT               &kp RBKT                &trans
       >;
     };
     mods_layer  {
       bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans          &trans                    &rpi_slow PAGE_UP UP        &rpi_slow C_BRI_DN C_VOLUME_DOWN  &rpi_slow C_BRI_UP C_VOLUME_UP                   &rpi_slow F5 N5                  &none                     &none &rpi_slow C_BRI_DN C_VOLUME_DOWN   &rpi_slow C_BRI_UP  C_VOLUME_UP    &rpi_slow PAGE_UP UP        &trans    &trans  &trans
-        &trans &trans          &rpi_slow HOME LEFT       &rpi_slow PAGE_DOWN DOWN    &rpi_slow END RIGHT               &trans                 &none        &trans &trans &trans &trans                   &none                     &trans      &rpi_slow HOME LEFT  &rpi_slow PAGE_DOWN DOWN           &rpi_slow END RIGHT       &trans  &trans
-        &trans &kp F11           &kp F12           &trans             &rpi_fast C_BRI_DN C_VOLUME_DOWN  &rpi_fast C_BRI_UP C_VOLUME_UP                 &trans &trans                                                                         &trans &trans          &trans                        &trans  &trans  &trans
-        &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
+        &kp F1 &kp F2     &kp F3                  &kp F4                     &kp F5                            &kp F6                                           &tog 1                                                          &mo 3 &kp F7                             &kp F8                             &kp F9                    &kp F10               &kp F11 &kp F12
+        &trans &trans     &trans                  &rpi_slow PAGE_UP UP       &rpi_slow C_BRI_DN C_VOLUME_DOWN  &rpi_slow C_BRI_UP C_VOLUME_UP                   &rpi_slow F5 N5                                                 &none &rpi_slow C_BRI_DN C_VOLUME_DOWN   &rpi_slow C_BRI_UP  C_VOLUME_UP    &rpi_slow PAGE_UP UP      &trans                &trans  &trans
+        &trans &trans     &rpi_slow HOME LEFT     &rpi_slow PAGE_DOWN DOWN   &rpi_slow END RIGHT               &trans                                           &none                  &trans &trans &trans &trans              &none &trans                             &rpi_slow HOME LEFT                &rpi_slow PAGE_DOWN DOWN  &rpi_slow END RIGHT   &trans  &trans
+        &trans &kp F11    &kp F12                 &trans                     &rpi_fast C_BRI_DN C_VOLUME_DOWN  &rpi_fast C_BRI_UP C_VOLUME_UP                                                 &trans &trans                           &trans                             &trans                             &trans                    &trans                &trans  &trans
+        &trans &trans     &trans                  &trans                     &trans                                                                                               &trans &trans &trans &trans &trans &trans                                              &trans                             &trans                    &trans                &trans  &trans
       >;
     };
     config_layer  {
       bindings = <
-        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                     &trans                 &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none        &none        &bootloader                                                               &bootloader            &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                      &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none &none &none
-        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                                      &none &none                                                 &bt BT_SEL 4    &bt BT_SEL 3      &bt BT_SEL 2      &bt BT_SEL 1   &bt BT_SEL 0 &none
-        &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
+        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                           &trans                 &none        &none          &none          &none         &none         &none
+        &none &none        &none        &none        &none        &none        &bootloader                                                                     &bootloader            &none        &none          &none          &none         &none         &none
+        &none &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                            &rgb_ug RGB_MEFS_CMD 5 &none        &none          &none          &none         &none         &none
+        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                                      &none &none                                                       &bt BT_SEL 4 &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1  &bt BT_SEL 0  &none
+        &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                           &bl BL_INC     &bl BL_DEC     &none         &none         &none
       >;
     };
 
     dota_base_layer   {
       bindings = <
-        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                                &trans                 &none        &none        &none        &none &none &none
-        &none &kp Q         &kp W          &kp E         &kp R            &rpi Y T        &bootloader                                                               &bootloader            &none        &none        &none        &none &none &none
-        &none &kp A         &rpi LCTRL S   &rpi LALT D   &rpi LSHIFT F    &kp G        &none                   &none &none &bt BT_CLR &none                         &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none &none &none
-        &none &kp Z         &kp X          &kp C         &kp V            &kp B                                      &none &none                                                           &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                   &bl BL_INC   &bl BL_DEC   &none &none &none
+        &none &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4   &none                                                                     &trans                 &none        &none        &none        &none &none &none
+        &none &kp Q         &kp W          &kp E         &kp R            &rpi Y T       &bootloader                                                               &bootloader            &none        &none        &none        &none &none &none
+        &none &kp A         &rpi LCTRL S   &rpi LALT D   &rpi LSHIFT F    &kp G          &none                   &none &none &bt BT_CLR &none                      &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none &none &none
+        &none &kp Z         &kp X          &kp C         &kp V            &kp B                                      &none &none                                                          &none        &none        &none        &none &none &none
+        &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                  &bl BL_INC   &bl BL_DEC   &none &none &none
       >;
     };
 
