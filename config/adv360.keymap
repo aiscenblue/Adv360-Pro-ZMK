@@ -17,11 +17,11 @@
 
     default_layer {
       bindings = <
-        &kp EQUAL       &kp N1            &kp N2             &kp N3             &kp N4                     &kp N5                 &tog 1                                                                               &mo 3 &kp N6              &kp N7             &kp N8          &kp N9          &kp N0           &kp MINUS
-        &kp TAB         &rpi ESCAPE Q     &rpi_lyr CODE W    &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R     &kp T                  &none                                                                                &none &kp Y               &kp U              &kp I           &kp O           &kp P            &kp BSLH
-        &kp ESC         &rpi LSHIFT A     &rpi LCTRL S       &rpi LALT D        &rpi LSHIFT F              &rpi LCMD G            &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                               &none &rpi RCMD H         &rpi RSHIFT J      &rpi RALT K     &rpi RCTRL L    &rpi RSHIFT SEMI &kp SQT
-        &kp LSHFT       &kp Z             &kp X              &kp C              &kp V                      &rpi CAPSLOCK B                               &kp HOME &kp PG_UP                                                  &rpi_slow DEL BSPC  &rpi RET N         &kp M           &kp COMMA       &kp DOT          &kp RSHFT
-        &tog DOTA_BASE  &kp GRAVE         &kp CAPS           &kp LEFT           &kp RIGHT                                              &rpi LCMD RET &rpi_lyr CODE BSPC  &kp END  &kp PG_DN &rpi RCMD RET &rpi_lyr CODE SPACE                     &kp UP             &kp DOWN        &kp LBKT        &kp RBKT         &trans
+        &kp EQUAL       &kp N1            &kp N2             &kp N3             &kp N4                     &kp N5                 &tog 1                                                                               &mo 3 &kp N6              &kp N7                    &kp N8             &kp N9            &kp N0           &kp MINUS
+        &kp ESC         &rpi ESCAPE Q     &rpi_lyr CODE W    &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R     &kp T                  &none                                                                                &none &kp Y               &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O   &rpi ESCAPE P    &kp BSLH
+        &kp TAB         &rpi LSHIFT A     &rpi LCTRL S       &rpi LALT D        &rpi LSHIFT F              &rpi LCMD G            &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                               &none &rpi RCMD H         &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L      &rpi RSHIFT SEMI &kp SQT
+        &kp LSHFT       &kp Z             &kp X              &kp C              &kp V                      &rpi CAPSLOCK B                               &kp HOME &kp PG_UP                                            &rpi_slow DEL BSPC        &rpi RET N                &kp M              &kp COMMA         &kp DOT          &kp RSHFT
+        &trans          &kp CAPS          &kp GRAVE          &kp UP             &kp DOWN                                              &rpi LCMD RET &rpi_lyr CODE TAB  &kp END  &kp PG_DN &rpi RCMD TAB &rpi_lyr CODE SPACE                      &kp LEFT                  &kp RIGHT          &kp LBKT          &kp RBKT         &trans
       >;
     };
     code_layer  {
