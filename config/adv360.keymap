@@ -17,11 +17,11 @@
 
     default_layer {
       bindings = <
-        &kp EQUAL       &kp N1            &kp N2             &kp N3             &kp N4                     &kp N5                 &mo CODE                                                                             &mo DEFAULT   &kp N6              &kp N7                    &kp N8             &kp N9            &kp N0           &kp MINUS
-        &kp ESC         &rpi ESCAPE Q     &rpi_lyr CODE W    &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R     &kp T                  &mo CONFIG                                                                           &mo CODE      &kp Y               &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O   &rpi ESCAPE P    &kp BSLH
-        &kp TAB         &rpi LSHIFT A     &rpi LCTRL S       &rpi LALT D        &rpi LSHIFT F              &rpi LCMD G            &tog DOTA_BASE       &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                          &mo MODS      &rpi RCMD H         &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L      &rpi RSHIFT SEMI &kp TAB
-        &kp LSHFT       &kp Z             &kp X              &kp C              &kp V                      &rpi CAPSLOCK B                               &kp HOME &kp PG_UP                                                          &rpi_slow DEL BSPC  &rpi RET N                &kp M              &kp COMMA         &kp DOT          &kp RSHFT
-        &mo CODE        &kp CAPS          &kp GRAVE          &kp UP             &kp DOWN                                              &rpi LCMD RET &rpi_lyr CODE DEL  &kp END  &kp PG_DN &rpi RSHIFT BSPC &rpi_lyr CODE SPACE                           &kp LEFT                  &kp RIGHT          &kp SLASH         &kp BSLH         &trans
+        &kp EQUAL       &kp N1            &kp N2             &kp N3             &kp N4                     &kp N5                 &tog CODE                                                                             &tog DEFAULT   &kp N6              &kp N7                    &kp N8             &kp N9            &kp N0           &kp MINUS
+        &kp ESC         &rpi ESCAPE Q     &rpi_lyr CODE W    &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R     &kp T                  &tog CONFIG                                                                           &tog CODE      &kp Y               &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O   &rpi ESCAPE P    &kp BSLH
+        &kp TAB         &rpi LSHIFT A     &rpi LCTRL S       &rpi LALT D        &rpi LSHIFT F              &rpi LCMD G            &tog DOTA_BASE       &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL                           &tog MODS      &rpi RCMD H         &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L      &rpi RSHIFT SEMI &kp TAB
+        &kp LSHFT       &kp Z             &kp X              &kp C              &kp V                      &rpi CAPSLOCK B                               &kp HOME &kp PG_UP                                                            &rpi_slow DEL BSPC  &rpi RET N                &kp M              &kp COMMA         &kp DOT          &kp RSHFT
+        &mo CODE        &kp CAPS          &kp GRAVE          &kp UP             &kp DOWN                                              &rpi LCMD RET &rpi_lyr CODE DEL  &kp END  &kp PG_DN &rpi RSHIFT BSPC &rpi_lyr CODE SPACE                             &kp LEFT                  &kp RIGHT          &kp SLASH         &kp BSLH         &trans
       >;
     };
     code_layer  {
@@ -44,11 +44,11 @@
     };
     config_layer  {
       bindings = <
-        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                           &trans                 &none        &none          &none          &none         &none         &none
-        &none &none        &none        &none        &none        &bt BT_CLR   &bootloader                                                                     &bootloader            &bt BT_CLR   &none          &none          &none         &none         &none
-        &none &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                            &rgb_ug RGB_MEFS_CMD 5 &none        &none          &none          &none         &none         &none
-        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                                      &none &none                                                       &bt BT_SEL 4 &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1  &bt BT_SEL 0  &none
-        &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                           &bl BL_INC     &bl BL_DEC     &none         &none         &none
+        &none &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 &none                                                                           &trans                 &bt BT_SEL 6 &bt BT_SEL 7   &bt BT_SEL 8   &bt BT_SEL 9  &bt BT_SEL 0  &none
+        &none &none        &none        &none        &none        &bt BT_CLR   &none                                                                           &none                  &bt BT_CLR   &none          &none          &none         &none         &none
+        &none &none        &none        &none        &none        &none        &none                   &bootloader &none &bt BT_CLR &bootloader                &rgb_ug RGB_MEFS_CMD 5 &none        &none          &none          &none         &none         &none
+        &none &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5                                      &none &none                                                       &bt BT_SEL 6 &bt BT_SEL 7   &bt BT_SEL 8   &bt BT_SEL 9  &bt BT_SEL 0  &none
+        &none &none        &none        &none        &none                                       &bootloader &none &none &none      &bl BL_TOG &bootloader                                         &bl BL_INC     &bl BL_DEC     &none         &none         &none
       >;
     };
 
@@ -130,7 +130,7 @@
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <250>;
-                    quick-tap-ms = <250>;
+                    quick-tap-ms = <150>;
                     require-prior-idle-ms = <0>;
                     bindings = <&mo>, <&kp>;
                 };
@@ -140,19 +140,9 @@
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <400>;
-                    quick-tap-ms = <250>;
+                    quick-tap-ms = <150>;
                     require-prior-idle-ms = <0>;
                     bindings = <&mo>, <&kp>;
-                };
-
-                tog_mod_kp: tog_mod_kp {
-                    compatible = "zmk,behavior-hold-tap";
-                    #binding-cells = <2>;
-                    flavor = "tap-preferred";
-                    tapping-term-ms = <500>;
-                    quick-tap-ms = <250>;
-                    require-prior-idle-ms = <0>;
-                    bindings = <&tog>, <&kp>;
                 };
     };
 
