@@ -100,8 +100,8 @@
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <250>;
-                    quick-tap-ms = <0>;
-                    require-prior-idle-ms = <0>; 
+                    quick-tap-ms = <250>;
+                    require-prior-idle-ms = <250>; 
                     bindings = <&kp>, <&kp>;
                 };
 
@@ -110,8 +110,8 @@
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <150>;
-                    quick-tap-ms = <0>;
-                    require-prior-idle-ms = <0>; 
+                    quick-tap-ms = <250>;
+                    require-prior-idle-ms = <250>; 
                     bindings = <&kp>, <&kp>;
                 };
 
@@ -130,8 +130,8 @@
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <250>;
-                    quick-tap-ms = <0>;
-                    require-prior-idle-ms = <0>;
+                    quick-tap-ms = <250>;
+                    require-prior-idle-ms = <250>;
                     bindings = <&mo>, <&kp>;
                 };
 
@@ -140,8 +140,8 @@
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <400>;
-                    quick-tap-ms = <0>;
-                    require-prior-idle-ms = <0>;
+                    quick-tap-ms = <250>;
+                    require-prior-idle-ms = <250>;
                     bindings = <&mo>, <&kp>;
                 };
 
@@ -150,8 +150,8 @@
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <500>;
-                    quick-tap-ms = <0>;
-                    require-prior-idle-ms = <0>;
+                    quick-tap-ms = <250>;
+                    require-prior-idle-ms = <250>;
                     bindings = <&tog>, <&kp>;
                 };
     };
