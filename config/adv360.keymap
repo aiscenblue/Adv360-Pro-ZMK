@@ -44,31 +44,31 @@
     };
     config_layer  {
       bindings = <
-        &none &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 &none                                                                           &trans                 &bt BT_SEL 6 &bt BT_SEL 7   &bt BT_SEL 8   &bt BT_SEL 9  &bt BT_SEL 0  &none
+        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                           &trans                 &bt BT_SEL 4 &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1  &bt BT_SEL 0  &none
         &none &none        &none        &none        &none        &bt BT_CLR   &none                                                                           &none                  &bt BT_CLR   &none          &none          &none         &none         &none
         &none &none        &none        &none        &none        &none        &none                   &bootloader &none &bt BT_CLR &bootloader                &rgb_ug RGB_MEFS_CMD 5 &none        &none          &none          &none         &none         &none
-        &none &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5                                      &none &none                                                       &bt BT_SEL 6 &bt BT_SEL 7   &bt BT_SEL 8   &bt BT_SEL 9  &bt BT_SEL 0  &none
+        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                                      &none &none                                                       &bt BT_SEL 4 &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1  &bt BT_SEL 0  &none
         &none &none        &none        &none        &none                                       &bootloader &none &none &none      &bl BL_TOG &bootloader                                         &bl BL_INC     &bl BL_DEC     &none         &none         &none
       >;
     };
 
     dota_base_layer   {
       bindings = <
-        &none &kp N1        &kp N2         &kp N3        &kp N4           &kp N5         &none                                                               &trans                 &none        &none        &none        &none &none &none
-        &none &kp Q         &kp W          &kp E         &kp R            &prm Y T       &none                                                               &bootloader            &none        &none        &none        &none &none &none
-        &none &kp A         &prm LCTRL S   &prm LALT D   &prm LSHIFT F    &kp G          &trans            &none &none &bt BT_CLR &none                      &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none &none &none
-        &none &kp Z         &kp X          &kp C         &kp V            &kp B                                      &none &none                                                    &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none                                        &kp LALT &mo DOTA_SHIFT &none &none     &bl BL_TOG &rgb_ug RGB_TOG                             &bl BL_INC   &bl BL_DEC   &none &none &none
+        &none &kp N1        &kp N2         &kp N3        &kp N4           &kp N5         &kp F13                                                               &none      &none        &none        &none        &none &none &none
+        &none &kp Q         &kp W          &kp E         &kp R            &prm Y T       &kp F14                                                               &none      &none        &none        &none        &none &none &none
+        &none &kp A         &prm LCTRL S   &prm LALT D   &prm LSHIFT F    &kp G          &kp F15            &none &none &none &none                            &none      &none        &none        &none        &none &none &none
+        &none &kp Z         &kp X          &kp C         &kp V            &kp B                                      &none &none                                          &none        &none        &none        &none &none &none
+        &none &none         &kp F3         &kp F2        &kp F1                                        &kp LALT &kp F16 &none &none     &none &none                                     &none        &none        &none &none &none
       >;
     };
 
     dota_shift_layer   {
       bindings = <
-        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                                 &trans                 &none    &none        &none       &none &none &none
+        &none &none         &none          &none           &none             &none         &none                                                                     &trans                 &none    &none        &none       &none &none &none
         &none &kp N1        &kp N2         &kp N3          &kp N4            &kp N5        &bootloader                                                               &bootloader            &none    &none        &none       &none &none &none
-        &none &kp N6        &kp N7         &kp N8          &kp N9            &kp N0        &none                   &none &none &bt BT_CLR &none                      &rgb_ug RGB_MEFS_CMD 5 &none    &none        &none       &none &none &none
+        &none &kp N6        &kp N7         &kp N8          &kp N9            &kp N0        &none                   &none &none &none &none                      &rgb_ug RGB_MEFS_CMD 5 &none    &none        &none       &none &none &none
         &none &kp F1        &kp F2         &kp F3          &kp F4            &kp F5                                      &none &none                                                        &none    &none        &none       &none &none &none
-        &none &none         &none          &none           &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                       &bl BL_INC   &bl BL_DEC  &none &none &none
+        &none &none         &none          &none           &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                       &none        &none  &none &none &none
       >;
     };
   };
