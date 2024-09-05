@@ -21,7 +21,7 @@
         &kp ESC                &rpi ESCAPE Q     &rpi_lyr CODE W    &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R     &kp T                  &mo CONFIG                                                                           &mo CONFIG    &kp Y               &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O   &rpi ESCAPE P    &kp BSLH
         &kp TAB                &rpi LSHIFT A     &rpi LCTRL S       &rpi LALT D        &rpi LSHIFT F              &rpi LCMD G            &tog DOTA_BASE       &kp LCTRL &kp LCMD &kp LGUI  &kp RCTRL                          &mo MODS      &rpi RCMD H         &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L      &rpi RSHIFT SEMI &kp TAB
         &kp LSHFT              &kp Z             &kp X              &rpi CAPSLOCK C    &kp V                      &prm BSPC B                                         &kp HOME &kp PG_UP                                                    &prm DEL BSPC       &prm RET N                &kp M              &kp COMMA         &kp DOT          &kp RSHFT
-        &rgb_ug RGB_MEFS_CMD 5 &kp CAPS          &kp GRAVE          &kp UP             &kp DOWN                                              &rpi LCMD RET &rpi_lyr CODE DEL  &kp END  &kp PG_DN &prm RSHIFT BSPC &rpi_lyr CODE SPACE                           &kp LEFT                  &kp RIGHT          &kp SLASH         &kp BSLH         &trans
+        &rgb_ug RGB_MEFS_CMD 5 &kp CAPS          &kp GRAVE          &kp UP             &kp DOWN                                              &rpi LCMD RET &rpi_lyr CODE DEL  &kp END  &kp PG_DN &prm RSHIFT BSPC &rpi_lyr CODE SPACE                           &kp LEFT                  &kp RIGHT          &kp SLASH         &kp BSLH         &rgb_ug RGB_TOG
       >;
     };
     code_layer  {
