@@ -21,7 +21,7 @@
         &kp ESC                &rpi ESCAPE Q     &rpi_lyr CODE W    &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R     &kp T                  &mo CONFIG                                                                           &mo CONFIG    &kp Y               &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O   &rpi ESCAPE P    &kp BSLH
         &kp TAB                &rpi LSHIFT A     &rpi LCTRL S       &rpi LALT D        &rpi LSHIFT F              &rpi LCMD G            &tog DOTA_BASE         &kp LCMD &kp LCTRL &kp RCTRL &kp LGUI                         &mo MODS      &rpi RCMD H         &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L      &rpi RSHIFT SEMI &kp TAB
         &kp LSHFT              &kp Z             &kp X              &rpi CAPSLOCK C    &kp V                      &prm BSPC B                                         &kp HOME &kp PG_UP                                                    &prm DEL BSPC       &prm RET N                &kp M              &kp COMMA         &kp DOT          &kp RSHFT
-        &rgb_ug RGB_MEFS_CMD 5 &kp CAPS          &kp GRAVE          &kp UP             &kp DOWN                                       &rpi LCMD DEL &rpi_lyr CODE RET &kp END &kp PG_DN &rpi_lyr CODE SPACE &rpi_lyr RCMD BSPC                                  &kp LEFT                  &kp RIGHT          &kp SLASH         &kp BSLH         &rgb_ug RGB_TOG
+        &rgb_ug RGB_MEFS_CMD 5 &kp CAPS          &kp GRAVE          &kp UP             &kp DOWN                                       &rpi LCMD DEL &rpi_lyr CODE RET &kp END &kp PG_DN &rpi_lyr CODE SPACE &rpi RCMD BSPC                                  &kp LEFT                  &kp RIGHT          &kp SLASH         &kp BSLH         &rgb_ug RGB_TOG
       >;
     };
     code_layer  {
@@ -101,7 +101,7 @@
                     flavor = "tap-preferred";
                     tapping-term-ms = <250>;
                     quick-tap-ms = <250>;
-                    require-prior-idle-ms = <0>; 
+                    require-prior-idle-ms = <150>;
                     bindings = <&kp>, <&kp>;
                 };
 
@@ -122,7 +122,7 @@
                     flavor = "tap-preferred";
                     tapping-term-ms = <150>;
                     quick-tap-ms = <250>;
-                    require-prior-idle-ms = <0>; 
+                    require-prior-idle-ms = <150>;
                     bindings = <&kp>, <&kp>;
                 };
 
@@ -132,7 +132,7 @@
                     flavor = "tap-preferred";
                     tapping-term-ms = <350>;
                     quick-tap-ms = <250>;
-                    require-prior-idle-ms = <0>;
+                    require-prior-idle-ms = <150>;
                     bindings = <&kp>, <&kp>;
                 };
 
@@ -141,8 +141,8 @@
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <250>;
-                    quick-tap-ms = <0>;
-                    require-prior-idle-ms = <0>;
+                    quick-tap-ms = <250>;
+                    require-prior-idle-ms = <150>;
                     bindings = <&mo>, <&kp>;
                 };
 
@@ -151,8 +151,8 @@
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <400>;
-                    quick-tap-ms = <0>;
-                    require-prior-idle-ms = <0>;
+                    quick-tap-ms = <250>;
+                    require-prior-idle-ms = <150>;
                     bindings = <&mo>, <&kp>;
                 };
     };
