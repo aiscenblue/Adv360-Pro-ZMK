@@ -18,10 +18,10 @@
     default_layer {
       bindings = <
         &kp EQUAL              &kp N1            &kp N2             &kp N3             &kp N4                     &kp N5                 &mo DEFAULT                                                                          &mo DEFAULT   &kp N6              &kp N7                    &kp N8             &kp N9            &kp N0           &kp MINUS
-        &kp ESC                &prm ESCAPE Q     &rpi_lyr CODE W    &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R     &kp T                  &mo CONFIG                                                                           &mo CONFIG    &kp Y               &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O   &prm ESCAPE P    &kp BSLH
+        &kp ESC                &rpi ESCAPE Q     &rpi_lyr CODE W    &rpi_lyr MODS E    &rpi_lyr_slow CONFIG R     &kp T                  &mo CONFIG                                                                           &mo CONFIG    &kp Y               &rpi_lyr_slow CONFIG U    &rpi_lyr MODS I    &rpi_lyr CODE O   &rpi ESCAPE P    &kp BSLH
         &kp TAB                &rpi LSHIFT A     &rpi LCTRL S       &rpi LALT D        &rpi LSHIFT F              &rpi LCMD G            &tog DOTA_BASE         &rpi LCMD ESC &kp LCTRL &kp RCTRL &rpi LGUI ESC               &mo MODS      &rpi RCMD H         &rpi RSHIFT J             &rpi RALT K        &rpi RCTRL L      &rpi RSHIFT SEMI &kp TAB
         &kp LSHFT              &kp Z             &kp X              &rpi CAPSLOCK C    &kp V                      &kp B                                               &kp HOME &kp PG_UP                                                    &prm DEL BSPC       &kp N                     &kp M              &kp COMMA         &kp DOT          &kp RSHFT
-        &rgb_ug RGB_MEFS_CMD 5 &kp CAPS          &kp GRAVE          &kp UP             &kp DOWN                                      &rpi LCMD DEL &rpi_lyr CODE RET &kp END &kp PG_DN &rpi_lyr CODE SPACE &rpi RCMD BSPC                                       &kp LEFT                  &kp RIGHT          &kp SLASH         &kp BSLH         &rgb_ug RGB_TOG
+        &rgb_ug RGB_MEFS_CMD 5 &kp CAPS          &kp GRAVE          &kp UP             &kp DOWN                                      &prm LCMD DEL &prm_lyr CODE RET &kp END &kp PG_DN &prm_lyr CODE SPACE &prm RCMD BSPC                                       &kp LEFT                  &kp RIGHT          &kp SLASH         &kp BSLH         &rgb_ug RGB_TOG
       >;
     };
     code_layer  {
@@ -55,8 +55,8 @@
     dota_base_layer   {
       bindings = <
         &none  &kp N1        &kp N2         &kp N3        &kp N4           &kp N5         &none                                                         &none      &none        &none        &none        &none &none &none
-        &none  &kp Q         &kp W          &kp E         &kp R            &prm Y T       &none                                                         &none      &none        &none        &none        &none &none &none
-        &none  &kp A         &prm LCTRL S   &prm LALT D   &prm LSHIFT F    &kp G          &mo DOTA_BASE            &kp F6 &kp F7 &none &none            &none      &none        &none        &none        &none &none &none
+        &none  &kp Q         &kp W          &kp E         &kp R            &rpi Y T       &none                                                         &none      &none        &none        &none        &none &none &none
+        &none  &kp A         &rpi LCTRL S   &rpi LALT D   &rpi LSHIFT F    &kp G          &mo DOTA_BASE            &kp F6 &kp F7 &none &none            &none      &none        &none        &none        &none &none &none
         &none  &kp Z         &kp X          &kp C         &kp V            &kp B                                      &kp F8 &none                                 &none        &none        &none        &none &none &none
         &none  &none         &kp F3         &kp F2        &kp F1                                        &mo DOTA_SHIFT &kp LALT &kp F9 &none     &none &none                    &none        &none        &none &none &none
       >;
@@ -85,23 +85,13 @@
       };
       #endif
 
-      hm: homerow_mods {
-          compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS";
-          #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          quick_tap_ms = <175>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
-      };
-
               rpi: rpi {
                     compatible = "zmk,behavior-hold-tap";
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <250>;
-                    quick-tap-ms = <250>;
-                    require-prior-idle-ms = <120>;
+                    quick-tap-ms = <0>;
+                    require-prior-idle-ms = <0>;
                     bindings = <&kp>, <&kp>;
                 };
 
@@ -115,14 +105,23 @@
                     bindings = <&kp>, <&kp>;
                 };
 
+                prm_lyr: prm_lyr {
+                    compatible = "zmk,behavior-hold-tap";
+                    #binding-cells = <2>;
+                    flavor = "tap-preferred";
+                    tapping-term-ms = <250>;
+                    quick-tap-ms = <250>;
+                    require-prior-idle-ms = <250>;
+                    bindings = <&mo>, <&kp>;
+                };
 
                 rpi_fast: rpi_fast {
                     compatible = "zmk,behavior-hold-tap";
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <150>;
-                    quick-tap-ms = <250>;
-                    require-prior-idle-ms = <120>;
+                    quick-tap-ms = <0>;
+                    require-prior-idle-ms = <0>;
                     bindings = <&kp>, <&kp>;
                 };
 
@@ -131,8 +130,8 @@
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <350>;
-                    quick-tap-ms = <250>;
-                    require-prior-idle-ms = <120>;
+                    quick-tap-ms = <0>;
+                    require-prior-idle-ms = <0>;
                     bindings = <&kp>, <&kp>;
                 };
 
@@ -141,8 +140,8 @@
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <250>;
-                    quick-tap-ms = <250>;
-                    require-prior-idle-ms = <120>;
+                    quick-tap-ms = <0>;
+                    require-prior-idle-ms = <0>;
                     bindings = <&mo>, <&kp>;
                 };
 
@@ -151,8 +150,8 @@
                     #binding-cells = <2>;
                     flavor = "tap-preferred";
                     tapping-term-ms = <400>;
-                    quick-tap-ms = <250>;
-                    require-prior-idle-ms = <120>;
+                    quick-tap-ms = <0>;
+                    require-prior-idle-ms = <0>;
                     bindings = <&mo>, <&kp>;
                 };
     };
